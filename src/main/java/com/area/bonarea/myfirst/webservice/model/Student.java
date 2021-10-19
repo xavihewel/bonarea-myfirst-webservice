@@ -4,12 +4,15 @@
  * and open the template in the editor.
  */
 package com.area.bonarea.myfirst.webservice.model;
+import java.io.Serializable;
+//import javax.xml.bind.annotation.XmlElement;
 
 /**
  *
  * @author xavier.verges
  */
-public class Student {
+//@XmlRootElement(name = "Student")
+public class Student implements Serializable {
 
     private long studentId;
     private String name;
@@ -40,6 +43,7 @@ public class Student {
         this.surname = surname;
     }
 
+//    @XmlElement(name="email")
     public String getEmail() {
         return email;
     }
