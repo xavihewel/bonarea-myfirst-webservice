@@ -35,6 +35,7 @@ public class StudentDaoTest {
         insertedStudent.setName("Pepe");
         insertedStudent.setSurname("Soto");
         insertedStudent.setEmail("pepe@gmail.com");
+        insertedStudent.setStudentId(1);
 
         //Stubbing
         when(studentDao.create(student)).thenReturn(insertedStudent);
