@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 public class DatabaseHelper {
 
     @Produces
-    @Resource(lookup = "jdbc/msql")
+    @Resource(lookup = "jdbc/mysql")
     @DefaultDataSource
     DataSource defaultDS;
 }

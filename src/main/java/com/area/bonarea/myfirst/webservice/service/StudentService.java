@@ -13,5 +13,6 @@ import java.sql.SQLException;
  * @author xavier.verges
  */
 public interface StudentService {
+
     Student create(Student student) throws SQLException;
 }
